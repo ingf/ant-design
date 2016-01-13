@@ -743,7 +743,7 @@ ReactDOM.render(
     <script>mountNode = document.getElementById('components-tree-demo-special');</script>
     <script>(function(){'use strict';
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _antd = require('antd');
 
@@ -755,7 +755,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var TreeNode = _antd.Tree.TreeNode;
 
-var TreeDemo = (function (_React$Component) {
+var TreeDemo = function (_React$Component) {
   _inherits(TreeDemo, _React$Component);
 
   function TreeDemo(props) {
@@ -842,7 +842,7 @@ var TreeDemo = (function (_React$Component) {
   }]);
 
   return TreeDemo;
-})(React.Component);
+}(React.Component);
 
 ReactDOM.render(React.createElement(TreeDemo, null), mountNode);})()</script><div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Tree, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">const</span> TreeNode = Tree.TreeNode;

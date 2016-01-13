@@ -2093,7 +2093,8 @@ ReactDOM.render(React.createElement(
     {
       label: "Datepicker：",
       labelCol: { span: 5 },
-      validateStatus: "error" },
+      validateStatus: "error",
+      help: true },
     React.createElement(
       _antd.Col,
       { span: "6" },
@@ -2120,6 +2121,44 @@ ReactDOM.render(React.createElement(
         "p",
         { className: "ant-form-explain" },
         "请输入正确选项"
+      )
+    )
+  ),
+  React.createElement(
+    FormItem,
+    {
+      label: "Datepicker：",
+      labelCol: { span: 5 } },
+    React.createElement(
+      _antd.Col,
+      { span: "6" },
+      React.createElement(
+        FormItem,
+        { validateStatus: "error" },
+        React.createElement(_antd.DatePicker, null),
+        React.createElement(
+          "p",
+          { className: "ant-form-explain" },
+          "请输入正确选项"
+        )
+      )
+    ),
+    React.createElement(
+      _antd.Col,
+      { span: "1" },
+      React.createElement(
+        "p",
+        { className: "ant-form-split" },
+        "-"
+      )
+    ),
+    React.createElement(
+      _antd.Col,
+      { span: "6" },
+      React.createElement(
+        FormItem,
+        null,
+        React.createElement(_antd.DatePicker, null)
       )
     )
   )
@@ -2186,7 +2225,8 @@ ReactDOM.render(
     <span class="hljs-tag">&lt;<span class="hljs-title">FormItem</span>
       <span class="hljs-attribute">label</span>=<span class="hljs-value">"Datepicker："</span>
       <span class="hljs-attribute">labelCol</span>=<span class="hljs-value">{{span:</span> <span class="hljs-attribute">5</span>}}
-      <span class="hljs-attribute">validateStatus</span>=<span class="hljs-value">"error"</span>&gt;</span>
+      <span class="hljs-attribute">validateStatus</span>=<span class="hljs-value">"error"</span>
+      <span class="hljs-attribute">help</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Col</span> <span class="hljs-attribute">span</span>=<span class="hljs-value">"6"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">DatePicker</span> /&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
@@ -2198,6 +2238,25 @@ ReactDOM.render(
       <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Col</span> <span class="hljs-attribute">span</span>=<span class="hljs-value">"19"</span> <span class="hljs-attribute">offset</span>=<span class="hljs-value">"5"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"ant-form-explain"</span>&gt;</span>请输入正确选项<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">FormItem</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">FormItem</span>
+      <span class="hljs-attribute">label</span>=<span class="hljs-value">"Datepicker："</span>
+      <span class="hljs-attribute">labelCol</span>=<span class="hljs-value">{{span:</span> <span class="hljs-attribute">5</span>}}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Col</span> <span class="hljs-attribute">span</span>=<span class="hljs-value">"6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">FormItem</span> <span class="hljs-attribute">validateStatus</span>=<span class="hljs-value">"error"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">DatePicker</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"ant-form-explain"</span>&gt;</span>请输入正确选项<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">FormItem</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Col</span> <span class="hljs-attribute">span</span>=<span class="hljs-value">"1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"ant-form-split"</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Col</span> <span class="hljs-attribute">span</span>=<span class="hljs-value">"6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">FormItem</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">DatePicker</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">FormItem</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">Col</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">FormItem</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">Form</span>&gt;</span>

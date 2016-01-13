@@ -40,6 +40,9 @@ var pagination = {
   showSizeChanger: true,
   onShowSizeChange: function onShowSizeChange(current, pageSize) {
     console.log('Current: ', current, '; PageSize: ', pageSize);
+  },
+  onChange: function onChange(current) {
+    console.log('Current: ', current);
   }
 };
 
@@ -75,6 +78,9 @@ ReactDOM.render(React.createElement(_antd.Table, { columns: columns, dataSource:
   showSizeChanger: <span class="hljs-literal">true</span>,
   onShowSizeChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">current, pageSize</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Current: '</span>, current, <span class="hljs-string">'; PageSize: '</span>, pageSize);
+  },
+  onChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">current</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Current: '</span>, current);
   }
 };
 

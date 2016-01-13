@@ -630,12 +630,6 @@ Select 选择器 - Ant Design
 <td>无</td>
 </tr>
 <tr>
-<td>allowClear</td>
-<td>显示清除按钮</td>
-<td>boolean</td>
-<td>false</td>
-</tr>
-<tr>
 <td>onSearch</td>
 <td>文本框值变化时回调</td>
 <td>function(value: String)</td>
@@ -652,6 +646,12 @@ Select 选择器 - Ant Design
 <td>搜索框默认文字</td>
 <td>string</td>
 <td>无</td>
+</tr>
+<tr>
+<td>notFoundContent</td>
+<td>当下拉列表为空时显示的内容</td>
+<td>string</td>
+<td>&#39;Not Found&#39;</td>
 </tr>
 <tr>
 <td>dropdownMatchSelectWidth</td>
@@ -845,6 +845,7 @@ function handleChange(value) {
 ReactDOM.render(React.createElement(
   _antd.Select,
   { defaultValue: 'lucy', showSearch: true, style: { width: 200 },
+    notFoundContent: '找不到呐！',
     searchPlaceholder: '输入',
     onChange: handleChange },
   React.createElement(
@@ -876,6 +877,7 @@ ReactDOM.render(React.createElement(
 
 ReactDOM.render(
   <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Select</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">"lucy"</span> <span class="hljs-attribute">showSearch</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{width:200}}</span>
+  <span class="hljs-attribute">notFoundContent</span>=<span class="hljs-value">"找不到呐！"</span>
   <span class="hljs-attribute">searchPlaceholder</span>=<span class="hljs-value">"输入"</span>
   <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{handleChange}</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">Option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"jack"</span>&gt;</span>jack<span class="hljs-tag">&lt;/<span class="hljs-title">Option</span>&gt;</span>
