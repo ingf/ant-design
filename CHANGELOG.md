@@ -4,6 +4,10 @@
 
 ---
 
+## 0.11.4 `test`
+
+- test
+
 ## 0.11.3 `fixing`
 
 - 修复 TimePicker 受控模式点选即关闭面板的问题。[#818](https://github.com/ant-design/ant-design/issues/818)
